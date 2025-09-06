@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/avatar.js" defer></script>
+    <title>Create Your Own Avatar</title>
+  </head>
+
+  <body>
+    <div class="intro part">
+      <h1>Elemental Wizards Unite!</h1>
+      <ul class="nav">
+        <li class="nav_item"><a href="main.html">Home</a></li>
+        <li class="nav_item"><a href="trivia.html">Trivia</a></li>
+        <li class="nav_item"><a href="avatar.html">Create an Avatar</a></li>
+      </ul>
+    </div>
+    <div class="part">
+      <h2>Create an Avatar</h2>
+      <p>
+        Answer the following questions to create your own custom Elemental
+        Wizards avatar.
+      </p>
+    </div>
+    <div class="part" id="form">
+      <form onsubmit="return false;">
+        <input type="text" placeholder="character name" id="char_name" /><br />
+        <label for="color">robe color:</label
+        ><input type="color" id="color" /><br />
+        <legend>power:</legend>
+        <input type="checkbox" id="air" name="power" value="air" />
+        <label for="air">air</label>
+        <input type="checkbox" id="fire" name="power" value="fire" />
+        <label for="fire">fire</label>
+        <input type="checkbox" id="water" name="power" value="water" />
+        <label for="water">water</label>
+        <input type="checkbox" id="earth" name="power" value="earth" />
+        <label for="earth">earth</label>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

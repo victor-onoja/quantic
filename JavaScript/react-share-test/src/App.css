@@ -1,0 +1,309 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header styles */
+.app-header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.app-header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Main content */
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Section styles */
+section {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+/* Configuration section */
+.config-section {
+  background: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.1),
+    rgba(118, 75, 162, 0.1)
+  );
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Quick URLs */
+.quick-urls {
+  margin-top: 2rem;
+}
+
+.url-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.url-button {
+  padding: 0.5rem 1rem;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.url-button:hover {
+  background: #5a67d8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* Share sections */
+.share-group {
+  margin-bottom: 3rem;
+}
+
+.share-group:last-child {
+  margin-bottom: 0;
+}
+
+/* Basic share buttons */
+.share-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.share-buttons button {
+  padding: 0.75rem 1.5rem;
+  background: #4267b2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.share-buttons button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Platform-specific button colours */
+.share-buttons button:nth-child(1) {
+  background: #4267b2;
+} /* Facebook */
+.share-buttons button:nth-child(2) {
+  background: #1da1f2;
+} /* Twitter */
+.share-buttons button:nth-child(3) {
+  background: #0077b5;
+} /* LinkedIn */
+.share-buttons button:nth-child(4) {
+  background: #25d366;
+} /* WhatsApp */
+.share-buttons button:nth-child(5) {
+  background: #0088cc;
+} /* Telegram */
+.share-buttons button:nth-child(6) {
+  background: #ff5700;
+} /* Reddit */
+.share-buttons button:nth-child(7) {
+  background: #d44638;
+} /* Email */
+
+/* Icon sections */
+.share-icons,
+.custom-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.share-icons button,
+.custom-icons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+.share-icons button:hover,
+.custom-icons button:hover {
+  transform: scale(1.1) translateY(-2px);
+}
+
+/* Custom icons specific styling */
+.custom-icons {
+  justify-content: center;
+}
+
+.custom-icons button {
+  margin: 0 0.5rem;
+}
+
+/* Info section */
+.info-section {
+  background: linear-gradient(
+    135deg,
+    rgba(118, 75, 162, 0.1),
+    rgba(102, 126, 234, 0.1)
+  );
+}
+
+.info-content p {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.info-content strong {
+  color: #333;
+}
+
+.tips {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 12px;
+}
+
+.tips ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tips li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.tips li::before {
+  content: "💡";
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .app-header h1 {
+    font-size: 2rem;
+  }
+
+  .app-header p {
+    font-size: 1rem;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+
+  .share-buttons,
+  .share-icons,
+  .custom-icons {
+    justify-content: center;
+  }
+
+  .url-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .share-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .share-buttons button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
